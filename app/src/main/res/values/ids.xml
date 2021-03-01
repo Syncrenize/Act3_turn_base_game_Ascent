@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textView6" type="id" />
+    <item name="txtPlayer_name" type="id" />
+    <item name="textView8" type="id" />
+    <item name="txtPlayer_hp" type="id" />
+    <item name="txtEnemy_hp" type="id" />
+    <item name="txtEnemy_name" type="id" />
+    <item name="textView" type="id" />
+    <item name="textView2" type="id" />
+    <item name="btnNextTurn" type="id" />
+    <item name="textView9" type="id" />
+    <item name="txtPlayerDPT" type="id" />
+    <item name="textView11" type="id" />
+    <item name="txtEnemyDPT" type="id" />
+    <item name="txtTurnLog" type="id" />
+</resources>

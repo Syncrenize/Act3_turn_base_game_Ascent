@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Act3_turn_base_game_Ascent"
