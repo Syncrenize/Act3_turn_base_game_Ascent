@@ -6,12 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ionia"
+        android:contentDescription="@string/todo" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtTurnLog"
+        tools:ignore="MissingConstraints" />
+
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="212dp"
-        android:text="Enemy Name:"
+        android:layout_marginStart="48dp"
+        android:fontFamily="@font/ancientrunes"
+        android:text="@string/enemy_name"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/txtPlayer_name"
         app:layout_constraintTop_toTopOf="@+id/txtPlayer_name" />
 
@@ -19,7 +44,10 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Health:"
+        android:fontFamily="@font/ancientrunes"
+        android:text="@string/health"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/txtPlayer_hp" />
 
@@ -27,7 +55,10 @@
         android:id="@+id/txtEnemy_hp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NaN"
+        android:fontFamily="@font/ancientrunes"
+        android:text="@string/nan"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/txtEnemy_name"
         app:layout_constraintTop_toTopOf="@+id/txtPlayer_hp" />
 
@@ -36,7 +67,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:text="NaN"
+        android:fontFamily="@font/ancientrunes"
+        android:text="@string/nan"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/textView6" />
 
@@ -45,7 +79,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:text="NaN"
+        android:fontFamily="@font/ancientrunes"
+        android:text="@string/nan"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="@+id/textView" />
 
@@ -53,7 +90,10 @@
         android:id="@+id/txtPlayer_hp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NaN"
+        android:fontFamily="@font/ancientrunes"
+        android:text="@string/nan"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/txtPlayer_name"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
@@ -62,7 +102,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="First Turn (1)"
+        android:text="@string/first_turn_1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.499"
@@ -72,9 +112,12 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Player Name:"
+        android:fontFamily="@font/ancientrunes"
+        android:text="@string/player_name"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -83,7 +126,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Health:"
+        android:fontFamily="@font/ancientrunes"
+        android:text="@string/health"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -92,7 +138,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Damage:"
+        android:fontFamily="@font/ancientrunes"
+        android:text="@string/damage"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -100,7 +149,10 @@
         android:id="@+id/txtPlayerDPT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NaN ~ NaN"
+        android:fontFamily="@font/ancientrunes"
+        android:text="@string/nan_nan"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/txtPlayer_hp"
         app:layout_constraintTop_toTopOf="@+id/textView9" />
 
@@ -108,7 +160,10 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Damage:"
+        android:fontFamily="@font/ancientrunes"
+        android:text="@string/damage"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/textView8"
         app:layout_constraintTop_toTopOf="@+id/txtPlayerDPT" />
 
@@ -116,7 +171,10 @@
         android:id="@+id/txtEnemyDPT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NaN ~ NaN"
+        android:fontFamily="@font/ancientrunes"
+        android:text="@string/nan_nan"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/txtEnemy_hp"
         app:layout_constraintTop_toTopOf="@+id/textView11" />
 
@@ -125,6 +183,9 @@
         android:layout_width="356dp"
         android:layout_height="73dp"
         android:layout_marginTop="36dp"
+        android:fontFamily="@font/ancientrunes"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

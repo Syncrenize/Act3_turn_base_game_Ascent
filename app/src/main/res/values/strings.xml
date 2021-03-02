@@ -1,3 +1,17 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Act3_turn_base_game_Ascent</string>
+    <string name="health" tools:ignore="DuplicateDefinition">Health:</string>
+    <string name="nan">NaN</string>
+    <string name="nan" tools:ignore="DuplicateDefinition">NaN</string>
+    <string name="health" tools:ignore="DuplicateDefinition">Health:</string>
+    <string name="first_turn_1">First Turn (1)</string>
+    <string name="nan" tools:ignore="DuplicateDefinition">NaN</string>
+    <string name="player_name">Player Name:</string>
+    <string name="damage">Damage:</string>
+    <string name="nan_nan">NaN ~ NaN</string>
+    <string name="damage" tools:ignore="DuplicateDefinition">Damage:</string>
+    <string name="nan_nan" tools:ignore="DuplicateDefinition">NaN ~ NaN</string>
+    <string name="nan" tools:ignore="DuplicateDefinition">NaN</string>
+    <string name="enemy_name">Enemy Name:</string>
+    <string name="todo">TODO</string>
 </resources>
